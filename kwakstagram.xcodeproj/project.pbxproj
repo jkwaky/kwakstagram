@@ -14,6 +14,10 @@
 		0F6F5CE42162D7CB00A13ECB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F6F5CE22162D7CB00A13ECB /* LaunchScreen.storyboard */; };
 		0F6F5CEF2162D7CB00A13ECB /* kwakstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6F5CEE2162D7CB00A13ECB /* kwakstagramTests.swift */; };
 		0F6F5CFA2162D7CB00A13ECB /* kwakstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6F5CF92162D7CB00A13ECB /* kwakstagramUITests.swift */; };
+		0FDA48A32162D9020014809A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDA48A22162D9020014809A /* LogInViewController.swift */; };
+		521FF3AABE5DCE292F29EDF1 /* Pods_kwakstagramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C2E757F91212D1F6EDEB1A /* Pods_kwakstagramUITests.framework */; };
+		9CE8016AB984F185761DC0BA /* Pods_kwakstagramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248E0D6C9AC491367129CB84 /* Pods_kwakstagramTests.framework */; };
+		E08589B863CF43E76CAA742A /* Pods_kwakstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC2F3EB63FB7E0B4EBFDFB3 /* Pods_kwakstagram.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,16 @@
 		0F6F5CF52162D7CB00A13ECB /* kwakstagramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kwakstagramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F6F5CF92162D7CB00A13ECB /* kwakstagramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kwakstagramUITests.swift; sourceTree = "<group>"; };
 		0F6F5CFB2162D7CB00A13ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FDA48A22162D9020014809A /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		1FC2F3EB63FB7E0B4EBFDFB3 /* Pods_kwakstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kwakstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		248E0D6C9AC491367129CB84 /* Pods_kwakstagramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kwakstagramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C336C9FA401020EAEBD2B40 /* Pods-kwakstagramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kwakstagramTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kwakstagramTests/Pods-kwakstagramTests.debug.xcconfig"; sourceTree = "<group>"; };
+		38AA6E203A8266D6E690955D /* Pods-kwakstagramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kwakstagramTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-kwakstagramTests/Pods-kwakstagramTests.release.xcconfig"; sourceTree = "<group>"; };
+		54C2E757F91212D1F6EDEB1A /* Pods_kwakstagramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kwakstagramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59110F0D561D9529CC91DEC8 /* Pods-kwakstagramUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kwakstagramUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kwakstagramUITests/Pods-kwakstagramUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D86BDB3046CE886552F90BAC /* Pods-kwakstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kwakstagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-kwakstagram/Pods-kwakstagram.release.xcconfig"; sourceTree = "<group>"; };
+		DE1E1F678BC3BD8DEDD7CE95 /* Pods-kwakstagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kwakstagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kwakstagram/Pods-kwakstagram.debug.xcconfig"; sourceTree = "<group>"; };
+		DF61905B64927F27F7830B2B /* Pods-kwakstagramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kwakstagramUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-kwakstagramUITests/Pods-kwakstagramUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E08589B863CF43E76CAA742A /* Pods_kwakstagram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CE8016AB984F185761DC0BA /* Pods_kwakstagramTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +84,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				521FF3AABE5DCE292F29EDF1 /* Pods_kwakstagramUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0400D9F95A269B8222943FE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FC2F3EB63FB7E0B4EBFDFB3 /* Pods_kwakstagram.framework */,
+				248E0D6C9AC491367129CB84 /* Pods_kwakstagramTests.framework */,
+				54C2E757F91212D1F6EDEB1A /* Pods_kwakstagramUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0F6F5CCD2162D7C800A13ECB = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +108,8 @@
 				0F6F5CED2162D7CB00A13ECB /* kwakstagramTests */,
 				0F6F5CF82162D7CB00A13ECB /* kwakstagramUITests */,
 				0F6F5CD72162D7C800A13ECB /* Products */,
+				E30868748CC0C7816BE771EB /* Pods */,
+				0400D9F95A269B8222943FE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +132,7 @@
 				0F6F5CE02162D7CB00A13ECB /* Assets.xcassets */,
 				0F6F5CE22162D7CB00A13ECB /* LaunchScreen.storyboard */,
 				0F6F5CE52162D7CB00A13ECB /* Info.plist */,
+				0FDA48A22162D9020014809A /* LogInViewController.swift */,
 			);
 			path = kwakstagram;
 			sourceTree = "<group>";
@@ -125,6 +155,19 @@
 			path = kwakstagramUITests;
 			sourceTree = "<group>";
 		};
+		E30868748CC0C7816BE771EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE1E1F678BC3BD8DEDD7CE95 /* Pods-kwakstagram.debug.xcconfig */,
+				D86BDB3046CE886552F90BAC /* Pods-kwakstagram.release.xcconfig */,
+				2C336C9FA401020EAEBD2B40 /* Pods-kwakstagramTests.debug.xcconfig */,
+				38AA6E203A8266D6E690955D /* Pods-kwakstagramTests.release.xcconfig */,
+				59110F0D561D9529CC91DEC8 /* Pods-kwakstagramUITests.debug.xcconfig */,
+				DF61905B64927F27F7830B2B /* Pods-kwakstagramUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F6F5CFE2162D7CB00A13ECB /* Build configuration list for PBXNativeTarget "kwakstagram" */;
 			buildPhases = (
+				4AD6B29ADF143B2A9BE03FFB /* [CP] Check Pods Manifest.lock */,
 				0F6F5CD22162D7C800A13ECB /* Sources */,
 				0F6F5CD32162D7C800A13ECB /* Frameworks */,
 				0F6F5CD42162D7C800A13ECB /* Resources */,
+				FC1E7FF59AF8B0BBDCCB2AB8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F6F5D012162D7CB00A13ECB /* Build configuration list for PBXNativeTarget "kwakstagramTests" */;
 			buildPhases = (
+				933A7C46BB8E07DFD231D34D /* [CP] Check Pods Manifest.lock */,
 				0F6F5CE62162D7CB00A13ECB /* Sources */,
 				0F6F5CE72162D7CB00A13ECB /* Frameworks */,
 				0F6F5CE82162D7CB00A13ECB /* Resources */,
@@ -167,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F6F5D042162D7CB00A13ECB /* Build configuration list for PBXNativeTarget "kwakstagramUITests" */;
 			buildPhases = (
+				8EF8981DD06267557E61436C /* [CP] Check Pods Manifest.lock */,
 				0F6F5CF12162D7CB00A13ECB /* Sources */,
 				0F6F5CF22162D7CB00A13ECB /* Frameworks */,
 				0F6F5CF32162D7CB00A13ECB /* Resources */,
@@ -251,6 +298,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4AD6B29ADF143B2A9BE03FFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kwakstagram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EF8981DD06267557E61436C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kwakstagramUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		933A7C46BB8E07DFD231D34D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kwakstagramTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC1E7FF59AF8B0BBDCCB2AB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-kwakstagram/Pods-kwakstagram-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kwakstagram/Pods-kwakstagram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0F6F5CD22162D7C800A13ECB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -258,6 +398,7 @@
 			files = (
 				0F6F5CDC2162D7C800A13ECB /* ViewController.swift in Sources */,
 				0F6F5CDA2162D7C800A13ECB /* AppDelegate.swift in Sources */,
+				0FDA48A32162D9020014809A /* LogInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +571,7 @@
 		};
 		0F6F5CFF2162D7CB00A13ECB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE1E1F678BC3BD8DEDD7CE95 /* Pods-kwakstagram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +590,7 @@
 		};
 		0F6F5D002162D7CB00A13ECB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D86BDB3046CE886552F90BAC /* Pods-kwakstagram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +609,7 @@
 		};
 		0F6F5D022162D7CB00A13ECB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C336C9FA401020EAEBD2B40 /* Pods-kwakstagramTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +631,7 @@
 		};
 		0F6F5D032162D7CB00A13ECB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38AA6E203A8266D6E690955D /* Pods-kwakstagramTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +653,7 @@
 		};
 		0F6F5D052162D7CB00A13ECB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59110F0D561D9529CC91DEC8 /* Pods-kwakstagramUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +674,7 @@
 		};
 		0F6F5D062162D7CB00A13ECB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF61905B64927F27F7830B2B /* Pods-kwakstagramUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
