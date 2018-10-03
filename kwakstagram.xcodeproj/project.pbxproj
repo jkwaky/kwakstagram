@@ -15,6 +15,9 @@
 		0F6F5CEF2162D7CB00A13ECB /* kwakstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6F5CEE2162D7CB00A13ECB /* kwakstagramTests.swift */; };
 		0F6F5CFA2162D7CB00A13ECB /* kwakstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6F5CF92162D7CB00A13ECB /* kwakstagramUITests.swift */; };
 		0FDA48A32162D9020014809A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDA48A22162D9020014809A /* LogInViewController.swift */; };
+		0FDA48A72162FBD50014809A /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDA48A62162FBD50014809A /* HomeTableViewController.swift */; };
+		0FDA48A92162FD1D0014809A /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDA48A82162FD1D0014809A /* ComposeViewController.swift */; };
+		0FF2062D216439F400FFFB6F /* UploadPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF2062C216439F400FFFB6F /* UploadPhotoViewController.swift */; };
 		521FF3AABE5DCE292F29EDF1 /* Pods_kwakstagramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C2E757F91212D1F6EDEB1A /* Pods_kwakstagramUITests.framework */; };
 		9CE8016AB984F185761DC0BA /* Pods_kwakstagramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248E0D6C9AC491367129CB84 /* Pods_kwakstagramTests.framework */; };
 		E08589B863CF43E76CAA742A /* Pods_kwakstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC2F3EB63FB7E0B4EBFDFB3 /* Pods_kwakstagram.framework */; };
@@ -52,6 +55,9 @@
 		0F6F5CF92162D7CB00A13ECB /* kwakstagramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kwakstagramUITests.swift; sourceTree = "<group>"; };
 		0F6F5CFB2162D7CB00A13ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FDA48A22162D9020014809A /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		0FDA48A62162FBD50014809A /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		0FDA48A82162FD1D0014809A /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		0FF2062C216439F400FFFB6F /* UploadPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPhotoViewController.swift; sourceTree = "<group>"; };
 		1FC2F3EB63FB7E0B4EBFDFB3 /* Pods_kwakstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kwakstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		248E0D6C9AC491367129CB84 /* Pods_kwakstagramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kwakstagramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C336C9FA401020EAEBD2B40 /* Pods-kwakstagramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kwakstagramTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kwakstagramTests/Pods-kwakstagramTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,12 +133,15 @@
 			isa = PBXGroup;
 			children = (
 				0F6F5CD92162D7C800A13ECB /* AppDelegate.swift */,
+				0FDA48A82162FD1D0014809A /* ComposeViewController.swift */,
 				0F6F5CDB2162D7C800A13ECB /* ViewController.swift */,
 				0F6F5CDD2162D7C800A13ECB /* Main.storyboard */,
 				0F6F5CE02162D7CB00A13ECB /* Assets.xcassets */,
 				0F6F5CE22162D7CB00A13ECB /* LaunchScreen.storyboard */,
 				0F6F5CE52162D7CB00A13ECB /* Info.plist */,
+				0FF2062C216439F400FFFB6F /* UploadPhotoViewController.swift */,
 				0FDA48A22162D9020014809A /* LogInViewController.swift */,
+				0FDA48A62162FBD50014809A /* HomeTableViewController.swift */,
 			);
 			path = kwakstagram;
 			sourceTree = "<group>";
@@ -396,8 +405,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FDA48A92162FD1D0014809A /* ComposeViewController.swift in Sources */,
+				0FDA48A72162FBD50014809A /* HomeTableViewController.swift in Sources */,
 				0F6F5CDC2162D7C800A13ECB /* ViewController.swift in Sources */,
 				0F6F5CDA2162D7C800A13ECB /* AppDelegate.swift in Sources */,
+				0FF2062D216439F400FFFB6F /* UploadPhotoViewController.swift in Sources */,
 				0FDA48A32162D9020014809A /* LogInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

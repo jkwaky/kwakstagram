@@ -12,7 +12,7 @@
         <!--Log In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LogInViewController" customModule="kwakstagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogInViewController" id="BYZ-38-t0r" customClass="LogInViewController" customModule="kwakstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,27 +54,120 @@
                     <connections>
                         <outlet property="passwordField" destination="OjV-9n-CCE" id="ZWn-Ug-3We"/>
                         <outlet property="userNameField" destination="q5Q-8z-whC" id="hte-rp-AlB"/>
-                        <segue destination="mkS-o9-nDD" kind="presentation" identifier="loginSegue" id="tuG-UH-R5F"/>
+                        <segue destination="eV8-Yu-dOK" kind="presentation" identifier="loginSegue" id="bTB-TR-FmB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="y5z-Cs-pPe">
+        <!--Root View Controller-->
+        <scene sceneID="Xfx-aK-EKd">
             <objects>
-                <viewController id="mkS-o9-nDD" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="a92-jb-lsu">
+                <tableViewController id="vWp-Em-9Qp" customClass="HomeTableViewController" customModule="kwakstagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="GJg-hU-XQ5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Xu5-bH-OVr"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qxb-55-Rdz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="kdh-QC-iAj">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kdh-QC-iAj" id="QFS-rd-Nf6">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vWp-Em-9Qp" id="zW0-dP-uNl"/>
+                            <outlet property="delegate" destination="vWp-Em-9Qp" id="z8w-9E-j4J"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="nKq-eM-fDh">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="fFW-Jz-Aq7">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="I2x-cg-qmg">
+                                <rect key="frame" x="16" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Log Out"/>
+                                <connections>
+                                    <action selector="didLogOut:" destination="vWp-Em-9Qp" eventType="touchUpInside" id="HPr-TJ-A31"/>
+                                </connections>
+                            </button>
+                            <connections>
+                                <action selector="didLogOut:" destination="vWp-Em-9Qp" id="vN9-Lk-2XT"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="upload" image="insta_camera_btn" id="Eyi-Os-3yv">
+                            <connections>
+                                <segue destination="13W-1M-yKd" kind="presentation" id="fry-HL-guP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yi0-Rv-HiF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="839" y="133"/>
+            <point key="canvasLocation" x="1873" y="131"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cMN-Zm-O8J">
+            <objects>
+                <navigationController id="13W-1M-yKd" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8bH-Ls-rqH">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Yfb-FH-0wQ" kind="relationship" relationship="rootViewController" id="kbz-dF-tKM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NvI-Im-HIs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2618" y="109"/>
+        </scene>
+        <!--Upload Photo View Controller-->
+        <scene sceneID="xU7-V1-s84">
+            <objects>
+                <viewController id="Yfb-FH-0wQ" customClass="UploadPhotoViewController" customModule="kwakstagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g53-IL-1Un">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="gyX-xg-zfE"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="l48-fe-J3D">
+                        <barButtonItem key="leftBarButtonItem" title="cancel" id="GTT-ja-STx">
+                            <connections>
+                                <segue destination="eV8-Yu-dOK" kind="presentation" id="usU-Zn-uy4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VP3-87-flw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3297" y="110"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="03I-8P-t0V">
+            <objects>
+                <navigationController id="eV8-Yu-dOK" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NRc-lG-KUc">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vWp-Em-9Qp" kind="relationship" relationship="rootViewController" id="WEB-1V-A9R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zCF-yB-6gN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="131"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="insta_camera_btn" width="25" height="25"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="bTB-TR-FmB"/>
+    </inferredMetricsTieBreakers>
 </document>
